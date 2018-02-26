@@ -1,0 +1,28 @@
+{
+  "name": "f0ur_n0de7s_dynam0db",
+  "version": "1.0.0",
+  "description": "SA45 Nodejs CA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
+  },
+  "keywords": [
+    "Nodejs",
+    "AWS",
+    "Dynamodb"
+  ],
+  "author": "SA45 Team4",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.202.0",
+    "body-parser": "^1.18.2",
+    "dynamodb": "^1.1.1",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "joi": "^13.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.15.1"
+  }
+}

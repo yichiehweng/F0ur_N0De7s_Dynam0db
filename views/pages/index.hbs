@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Members Profile Page</title>
+     {{> head }}
+
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        {{> header }}
+    </header>
+    <h3>Member List</h3>
+    <br/>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>                
+                <th scope="col">Age</th>
+                <th scope="col">CreatedAt</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each members}}
+            <tr class="table-light">
+                <td>{{attrs.name}}</td>
+                <td>{{attrs.email}}</td>               
+                <td>{{attrs.age}}</td>
+                <td>{{attrs.createdAt}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <br/>
+     <footer>
+        {{> footer }}
+    </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Members Profile Page</title>
+      {{> head }}
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        {{> header }}
+    </header>
+    <h3>Add New Member</h3>
+    <br/>
+   
+    <form method="post" action="/members/add">
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Email: </label>
+        <div class="col-sm-10">
+        <input type="email" class="form-control" placeholder="Please Enter Your Email" name="email">
+        </div>
+    </div>
+     <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Age: </label>
+        <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Please Enter Your Age" name="age">
+        </div>
+    </div>
+     <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Name: </label>
+        <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Please Enter Your Name" name="name">
+        </div>
+    </div>    
+        <button type="submit" class="btn btn-primary">Submit</button>                            
+    </form>
+    <br/>
+    <footer>
+        {{> footer }}
+    </footer>
+    </div>
+</body>
+
+</html>
